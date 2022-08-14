@@ -1,0 +1,103 @@
+header{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(227, 219, 219);
+    background-color: #BA4A2B;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius:20px ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.padre {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    }
+
+.hijo1 { grid-area: 1 / 1 / 4 / 3; }
+.hijo2 { grid-area: 1 / 3 / 4 / 6; }
+
+.imagen{
+    border-radius: 20px;
+    width: 600px;
+}
+.acordeon{
+    bottom: 280px;
+    width: 500px;
+    max-width: 120em;
+    padding: 2em;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.acordeon .bloque{
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-radius: 13px;
+    border: 2px solid #ccc;
+}
+.acordeon .h2{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    font-size: 17px;
+}
+.acordeon .contenido{
+    padding: 0em;
+    border-radius: 20px;
+    height: 0px;
+    overflow: hidden;
+    size: 60px;
+    transition: all  .5s ease;
+}
+.acordeon .bloque.activo .contenido{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 22em;
+    padding: 2em;
+    border: 2px solid #ccc;
+    font-size: 14px;
+}
+.parent .div1{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #BA4A2B;
+    color: #ccc;
+    border: 2px solid #ccc;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius:20px ;
+    padding: 10px;
+    margin: 0;
+    height: 50px;
+
+}
+.parent .carta{
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #ccc;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.parent{
+    display: grid;
+    grid-template-columns:400px 400px 400px;
+    grid-template-rows: 60px 310px;
+    grid-column-gap: 0px;
+    grid-row-gap: 6px;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    bottom: 520px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 4; }
+.div2 { grid-area: 2 / 1 / 4 / 2; }
+.div3 { grid-area: 2 / 2 / 4 / 3; }
+.div4 { grid-area: 2 / 3 / 4 / 4; }
+
+.card-text{
+    font-size: 15px;
+}
